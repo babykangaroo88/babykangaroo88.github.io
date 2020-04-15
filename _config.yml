@@ -87,7 +87,7 @@ defaults:
       type: posts
     values:
       layout: post
-      share: true
+      share: false
 
 # Site Author
 author:
@@ -101,7 +101,4 @@ author:
       icon:
 
 # Footer Links
-footer_links:
-  - title: Feed
-    url: atom.xml
-    icon: fas fa-rss-square
+footer_links: false
