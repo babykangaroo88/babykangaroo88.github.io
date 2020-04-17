@@ -26,7 +26,11 @@
     <div class="entry-excerpt p-summary">
       {% if entry.excerpt %}
         {{ entry.excerpt | markdownify }}
-      {% endif %}
+      {% endif %}	  
+	   {% if entry.excerpt != entry.content %}
+    <a href="{{ site.baseurl }}{{ entry.url }}">Read more</a>
+{% endif %}
+
     </div>
   {% endunless %}
   {% if site.read_time or entry.date and page.layout != 'collection' %}
